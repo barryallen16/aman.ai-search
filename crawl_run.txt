@@ -1,0 +1,90 @@
+2026-08-17 22:12:11 [scrapy.utils.log] INFO: Scrapy 2.17.0 started (bot: scrapybot)
+2026-08-17 22:12:11 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.1.1',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.5.0',
+ 'parsel': '1.11.0',
+ 'w3lib': '2.4.1',
+ 'Twisted': '26.4.0',
+ 'Python': '3.11.11 (main, Dec  6 2024, 18:05:41) [MSC v.1942 64 bit (AMD64)]',
+ 'pyOpenSSL': '26.4.0 (OpenSSL 4.0.1 9 Jun 2026)',
+ 'cryptography': '50.0.0',
+ 'Platform': 'Windows-10-10.0.26200-SP0'}
+2026-08-17 22:12:11 [scrapy.crawler] DEBUG: Using AsyncCrawlerProcess
+2026-08-17 22:12:11 [asyncio] DEBUG: Using selector: SelectSelector
+2026-08-17 22:12:11 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-08-17 22:12:11 [scrapy.extensions.telnet] INFO: Telnet Password: bd2e9274c7f8dc5e
+2026-08-17 22:12:11 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2026-08-17 22:12:11 [scrapy.crawler] INFO: Overridden settings:
+{'CONCURRENT_REQUESTS': 8,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_LEVEL': 'INFO',
+ 'RETRY_TIMES': 3,
+ 'SPIDER_LOADER_CLASS': <class 'scrapy.spiderloader.DummySpiderLoader'>,
+ 'USER_AGENT': 'aman-ai-search-indexer/1.0 (personal research index)'}
+2026-08-17 22:12:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-08-17 22:12:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-08-17 22:12:12 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2026-08-17 22:12:12 [scrapy.core.engine] INFO: Spider opened
+2026-08-17 22:12:12 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-08-17 22:12:12 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2026-08-17 22:12:12 [aman_ai] WARNING: Skipping non-HTML: https://aman.ai/h/assets/Netflix.pdf
+2026-08-17 22:13:12 [scrapy.extensions.logstats] INFO: Crawled 97 pages (at 97 pages/min), scraped 4130 items (at 4130 items/min)
+2026-08-17 22:14:12 [scrapy.extensions.logstats] INFO: Crawled 195 pages (at 98 pages/min), scraped 8131 items (at 4001 items/min)
+2026-08-17 22:15:12 [scrapy.extensions.logstats] INFO: Crawled 293 pages (at 98 pages/min), scraped 12482 items (at 4351 items/min)
+2026-08-17 22:16:12 [scrapy.extensions.logstats] INFO: Crawled 389 pages (at 96 pages/min), scraped 17147 items (at 4665 items/min)
+2026-08-17 22:17:12 [scrapy.extensions.logstats] INFO: Crawled 486 pages (at 97 pages/min), scraped 20515 items (at 3368 items/min)
+2026-08-17 22:17:12 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-08-17 22:17:12 [scrapy.extensions.feedexport] INFO: Stored jsonl feed (20595 items) in: aman-ai-sections.jsonl
+2026-08-17 22:17:12 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 120338,
+ 'downloader/request_count': 488,
+ 'downloader/request_method_count/GET': 488,
+ 'downloader/response_bytes': 22599147,
+ 'downloader/response_count': 488,
+ 'downloader/response_status_count/200': 487,
+ 'downloader/response_status_count/404': 1,
+ 'dupefilter/filtered': 1,
+ 'elapsed_time_seconds': 300.65599999999904,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 8, 17, 16, 47, 12, 696563, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 65964349,
+ 'httpcompression/response_count': 488,
+ 'item_scraped_count': 20595,
+ 'items_per_minute': 4119.0,
+ 'log_count/INFO': 8,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 487,
+ 'responses_per_minute': 97.4,
+ 'scheduler/dequeued': 488,
+ 'scheduler/dequeued/memory': 488,
+ 'scheduler/enqueued': 488,
+ 'scheduler/enqueued/memory': 488,
+ 'start_time': datetime.datetime(2026, 8, 17, 16, 42, 12, 46087, tzinfo=datetime.timezone.utc)}
+2026-08-17 22:17:12 [scrapy.core.engine] INFO: Spider closed (finished)
